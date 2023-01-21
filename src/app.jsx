@@ -1,10 +1,11 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import React, { useState } from 'react';
+import { useEffect } from 'react';
 import { DateTime } from 'luxon';
 
-function render() {
+const App = function () {
     const nowtime = DateTime.now().toLocaleString();
-    ReactDOM.render(<h2>Hello from React! {nowtime}</h2>, document.body);
+    return (<div>Hello from React! {nowtime}</div>)
+
 }
 
-render();
+export default App
